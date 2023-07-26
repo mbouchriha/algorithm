@@ -1,0 +1,37 @@
+ALGORITHM sentence
+VAR
+sentence : string
+length_sentence : INTEGER := 0;
+number_words : INTEGER := 0;
+number_vowels : INTEGER := 0;
+
+BEGIN
+
+Write("Enter a sentence which ends with a point");
+Read(sentence);
+
+// Count the length of the phrase
+FOR each character in sentence Do
+    length_sentence := length_sentence + 1;
+END_FOR
+
+// Count the number of words in the sentence
+FOR each character in sentence Do
+    IF character = ' ' THEN
+        number_words := number_words + 1;
+    END_IF
+END_FOR
+
+// Count the number of vowels in the sentence
+FOR each character in sentence Do
+    IF character is a vowel (a, e, i, o, u, y) THEN
+        number_vowels := number_vowels + 1;
+    END_IF
+END_FOR
+
+// Show the results
+Write("Sentence length: ", length_sentence);
+Write("Number of words in the sentence: ", number_words);
+Write("Nombre de voyelles dans la phrase : ", number_vowels);
+
+END
