@@ -32,6 +32,6 @@ END_FOR
 // Show the results
 Write("Sentence length: ", length_sentence);
 Write("Number of words in the sentence: ", number_words);
-Write("Nombre de voyelles dans la phrase : ", number_vowels);
+Write("Number of vowels in the sentence : ", number_vowels);
 
 END
